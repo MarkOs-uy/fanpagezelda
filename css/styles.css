@@ -23,11 +23,10 @@
 /* Estilo de los encabezados principales */
 h1 {
     font-family: 'Medula One';
-    font-size: 4rem;
+    font-size: 3rem;
     color:white;
     background-color: black;
     border-top: rgb(47, 37, 36) 3px solid;
-    padding: 0;
     margin: 0;
     text-align: center;
 }
@@ -36,17 +35,15 @@ h1 {
 .navegador {
     background-color: black;
     font-family: 'Medula One';
-    letter-spacing: 0.073125em;
+    letter-spacing: 0.08;
     color: #FFFFFF;
-    font-size: 2.25rem;
-	  text-shadow: 0px 1px 2px rgba(0,0,0,0.35);
+    font-size: 2rem;
+	text-shadow: 0px 1px 2px rgba(0,0,0,0.35);
     line-height: 1;
     text-align: center;
     position: relative;
-    padding: 0;
     margin: 0;
     border-bottom: rgb(47, 37, 36) 3px solid;
-    margin: 0;
 }
 
 /* Añadimos flexbox al menú */
@@ -58,7 +55,7 @@ h1 {
     list-style: none;           /* Quita los puntos de la lista */
     padding: 0;
     margin: 0;
-    gap: 40px;                  /* Espacio entre los ítems del menú */
+    gap: 50px;                  /* Espacio entre los ítems del menú */
 }
 
 /* Estilo de los ítems en el navegador*/
@@ -76,30 +73,24 @@ h1 {
     border-radius: 5px; /* Redondea las 4 esquinas con un radio de 5px */
 }
 
-/* Estilo de la clase "contenido" */
-.contenido {
-  margin: 0;
-  padding: 0;
-}
 
 /* Estilo aplicado al Logo en el Header */
 .logo-redondeado {
-  border-radius: 50px; /* Redondea las 4 esquinas con un radio de 50px */
+  border-radius: 50%; /* Redondea las 4 esquinas con un radio de 50px */
 }
 
 /* Estilo del body */
 body {
-	font-family: 'Libre Baskerville', serif;
-	/* color: #FFFFFF; */
-  color: rgb(255, 216, 144);
-	line-height: 1.75;
-  padding: 0;
-  margin: 0;
-  background-image: url('../imagenes/fondo.png'); /* Ruta a la imagen de fondo */
-  background-size: cover;                      /* Cubre toda la pantalla */
-  background-repeat: no-repeat;                /* No repite la imagen */
-  background-position: center center;          /* Centrada horizontal y verticalmente */
-  background-attachment: fixed;                /* Fondo fijo al hacer scroll */
+    font-family: 'Libre Baskerville', serif;
+    color: rgb(255, 216, 144);
+    line-height: 1.75;
+    padding: 0;
+    margin: 0;
+    background-image: url('../imagenes/fondo.png'); /* Ruta a la imagen de fondo */
+    background-size: cover;                      /* Cubre toda la pantalla */
+    background-repeat: no-repeat;                /* No repite la imagen */
+    background-position: center center;          /* Centrada horizontal y verticalmente */
+    background-attachment: fixed;                /* Fondo fijo al hacer scroll */
 }
 
 /* Estilo del id="inicio" de la página Index*/
@@ -108,20 +99,11 @@ body {
 }
 
 footer {
-	font-family: 'Libre Baskerville', serif; /* familias de fuentes utilizadas */
-	color: #ffffff; /* Color blanco */
-	line-height: 1.75;
-  margin: 0;  
-  text-align: center; /* Alinear al centro */
-}
-
-main {
-  border: 0px;
-  margin: 0;   
-}
-
-header {
-  margin: 0;   
+    font-family: 'Libre Baskerville', serif; /* familias de fuentes utilizadas */
+    color: #ffffff; /* Color blanco */
+    line-height: 1.75;
+    margin: 0;  
+    text-align: center; /* Alinear al centro */
 }
 
 .seccion-trailer {
@@ -132,113 +114,17 @@ header {
     text-align: center;  
 }
 
-/* Contenedor principal del formulario */
-.form-container {
-    background-color: rgb(47, 37, 36); /* Fondo para el formulario */
-    margin: 30px auto; /* Define un margen superior e inferior de 30px y izquierdo y derecho auto, lo que hace que se centre horizontalmente */
-    padding: 30px; /* Espacio interno */
+.imagen-personajes, .imagen-sobre {
+    display: block;
+    margin: 0 auto;
+    align-self: center;
     border-radius: 8px; /* Bordes redondeados */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    max-width: 500px; /* Limitar el ancho máximo */
-    width: 100%; /* Asegurar que ocupe el 100% del ancho disponible hasta max-width */
 }
 
-.form-container h2 {
-    font-family: 'Medula One', serif; /* Fuente del encabezado h2*/
-    text-align: center; /* Centrar el título del formulario */
-    color: rgb(255, 216, 144); /* Color de título */
-    margin-top: 0;
-    margin-bottom: 10px;
-}
-
-.form-container p {
-    font-family: 'Medula One', serif; /* Fuente del encabezado h2*/
-    text-align: center; /* Centrar el título del formulario */
-    color: rgb(255, 216, 144); /* Color de título */
-    font-size: 2em;
-    margin-top: 0;
-    margin-bottom: 10px;
-}
-
-/* Grupo de cada campo del formulario (label + input/textarea) */
-.form-group {
-    margin-bottom: 5px; /* Espacio entre grupos de campos */
-}
-
-/* Estilos para las etiquetas (labels) */
-.form-group label {
-    display: block; /* Hace que la etiqueta ocupe su propia línea */
-    margin-bottom: 5px; /* Espacio debajo de la etiqueta */
-    font-family: 'Medula One', serif; /* Asegura que usen la misma fuente */
-    font-size: 1.8em;
-    /* font-weight: bold;  Texto en negrita */
-    color: rgb(255, 216, 144);
-}
-
-/* Estilos para los campos de entrada de texto y email, y el area de texto */
-.form-group input[type="text"],
-.form-group input[type="email"],
-.form-group textarea {
-    display: block; /* Asegura que ocupen su propia línea */
-    width: 100%; /* Ocupar todo el ancho del contenedor padre (.form-group) */
-    padding: 10px; /* Espacio interno */
-    border: 1px solid #ccc; /* Borde */
-    border-radius: 4px; /* Bordes redondeados */
-    box-sizing: border-box; /* Incluye padding y border en el cálculo del width */
-    font-size: 1em;
-    font-family: 'Libre Baskerville', serif; /* Asegura que usen la misma fuente */
-}
-
-/* Estilo al enfocar un campo del formulario */
-.form-group input[type="text"]:focus,
-.form-group input[type="email"]:focus,
-.form-group textarea:focus {
-    border-color: #007bff; /* Cambia el color del borde al enfocar */
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3); /* Añade una sombra sutil al enfocar */
-}
-
-/* Estilos para el botón de envío */
-.submit-button {
-    display: block; /* Ocupar su propia línea */
-    width: 100%; /* Ocupar todo el ancho del formulario */
-    background-color: rgb(47, 37, 36); /* Color de fondo */
-    font-family: 'Medula One', serif; /* Fuente del Texto */
-    color: rgb(255, 216, 144); /* Color de texto blanco */
-    margin-top: 20px; /* Margen superior del botón */
-    padding: 12px 20px; /* Espacio interno */
-    border: 2px solid rgb(22, 18, 17); /* Eliminar borde por defecto */
-    border-radius: 4px; /* Bordes redondeados */
-    cursor: pointer; /* Cambiar cursor al pasar el ratón */
-    font-size: 1.8em;
-}
-
-/* Estilo del botón al pasar el ratón */
-.submit-button:hover {
-    background-color: rgb(18,2,3); /* más claro */
-}
-
-/* Estilo del botón al hacer clic */
-.submit-button:active {
-    background-color: #000000;
-}
-
-/* Estilo del botón al seleccionarlo (con teclado) */
-.submit-button:focus {
-    outline: none; /* Elimina el outline por defecto si usamos box-shadow */
-    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25); /* Sombra para el foco */
-}
-
-
-.imagen-personajes {
-  margin-right: 15px; /* Añadimos espacio a la derecha para separar el texto */
-  margin-bottom: 10px; /* Añadimos espacio abajo si el texto es más corto que la imagen */
-  border-radius: 8px; /* Bordes redondeados */
-}
-
-.imagen-sobre {
-  margin-left: 15px; /* Añadimos espacio a la derecha para separar el texto */
-  margin-bottom: 10px; /* Añadimos espacio abajo si el texto es más corto que la imagen */
-  border-radius: 8px; /* Bordes redondeados */
+.subrayadoynegrita {
+  text-decoration: underline;
+  color:rgb(255, 216, 144);
+  font-weight: bold;
 }
 
 /* Contenedor principal de la galería */
@@ -367,26 +253,147 @@ header {
     padding: 10px;
     flex: 0 1 auto;
     background-color: rgb(47, 37, 36);
-    border-radius: 8px;
     overflow: hidden;
-    transition: transform 0.3s;
     border-radius: 12px;
 }
 
 /* Estilos para el texto */
-.intro > div {
+.texto-borde-derecho {
     width: 50%;
-    color: white; /* Opcional: mejora la legibilidad si el fondo es oscuro */
+    color: white; 
+    text-align: justify;
+    padding-left: 10px;
+    padding-right: 20px;
+    margin-right: 20px;
+    border-right: 3px solid rgba(255, 255, 255, 0.3);
+}
+
+.texto-borde-izquierdo {
+    width: 50%;
+    color: white; 
+    text-align: justify;
+    padding-left: 20px;
+    padding-right: 10px;
+    margin-left: 20px;
+    border-left: 3px solid rgba(255, 255, 255, 0.3);
+}
+
+.video-intro {
+    position: relative;
+    width: 50%;
+    padding-top: 28.125%; /* 16:9 aspect ratio => 9/16 = 0.5625 → 50% * 0.5625 = 28.125% */
+    margin-left: 10px;
 }
 
 /* Estilos para el iframe */
-.intro iframe {
-    width: 50%;
-    height: auto;
+.video-intro iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     border-radius: 12px;
 }
 
 .eljuego p {
     color: #FFFFFF;
     text-align: justify;
+}
+
+/*  P A G I N A      D E    C O N T A C T O   -   E S T I L O S   D E L   F O R M U L A R I O */
+
+/* Contenedor principal del formulario */
+.form-container {
+    background-color: rgb(47, 37, 36); /* Fondo para el formulario */
+    margin: 30px auto; /* Define un margen superior e inferior de 30px y izquierdo y derecho auto, lo que hace que se centre horizontalmente */
+    padding: 30px; /* Espacio interno */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    max-width: 500px; /* Limitar el ancho máximo */
+    width: 100%; /* Asegurar que ocupe el 100% del ancho disponible hasta max-width */
+}
+
+.form-container h2 {
+    font-family: 'Medula One', serif; /* Fuente del encabezado h2*/
+    text-align: center; /* Centrar el título del formulario */
+    color: rgb(255, 216, 144); /* Color de título */
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.form-container p {
+    font-family: 'Medula One', serif; /* Fuente del encabezado h2*/
+    text-align: center; /* Centrar el título del formulario */
+    color: rgb(255, 216, 144); /* Color de título */
+    font-size: 2em;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+/* Grupo de cada campo del formulario (label + input/textarea) */
+.form-group {
+    margin-bottom: 5px; /* Espacio entre grupos de campos */
+}
+
+/* Estilos para las etiquetas (labels) */
+.form-group label {
+    display: block; /* Hace que la etiqueta ocupe su propia línea */
+    margin-bottom: 5px; /* Espacio debajo de la etiqueta */
+    font-family: 'Medula One', serif; /* Asegura que usen la misma fuente */
+    font-size: 1.8em;
+    /* font-weight: bold;  Texto en negrita */
+    color: rgb(255, 216, 144);
+}
+
+/* Estilos para los campos de entrada de texto y email, y el area de texto */
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    display: block; /* Asegura que ocupen su propia línea */
+    width: 100%; /* Ocupar todo el ancho del contenedor padre (.form-group) */
+    padding: 10px; /* Espacio interno */
+    border: 1px solid #ccc; /* Borde */
+    border-radius: 4px; /* Bordes redondeados */
+    box-sizing: border-box; /* Incluye padding y border en el cálculo del width */
+    font-size: 1em;
+    font-family: 'Libre Baskerville', serif; /* Asegura que usen la misma fuente */
+}
+
+/* Estilo al enfocar un campo del formulario */
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group textarea:focus {
+    border-color: #007bff; /* Cambia el color del borde al enfocar */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3); /* Añade una sombra sutil al enfocar */
+}
+
+/* Estilos para el botón de envío */
+.submit-button {
+    display: block; /* Ocupar su propia línea */
+    width: 100%; /* Ocupar todo el ancho del formulario */
+    background-color: rgb(47, 37, 36); /* Color de fondo */
+    font-family: 'Medula One', serif; /* Fuente del Texto */
+    color: rgb(255, 216, 144); /* Color de texto blanco */
+    margin-top: 20px; /* Margen superior del botón */
+    padding: 12px 20px; /* Espacio interno */
+    border: 2px solid rgb(22, 18, 17); /* Eliminar borde por defecto */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar cursor al pasar el ratón */
+    font-size: 1.8em;
+}
+
+/* Estilo del botón al pasar el ratón */
+.submit-button:hover {
+    background-color: rgb(18,2,3); /* más claro */
+}
+
+/* Estilo del botón al hacer clic */
+.submit-button:active {
+    background-color: #000000;
+}
+
+/* Estilo del botón al seleccionarlo (con teclado) */
+.submit-button:focus {
+    outline: none; /* Elimina el outline por defecto si usamos box-shadow */
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25); /* Sombra para el foco */
 }
