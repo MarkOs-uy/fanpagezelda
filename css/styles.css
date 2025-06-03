@@ -200,22 +200,31 @@ footer {
 
 .video-gallery {
     display: flex;
+    flex-direction: column;
     justify-content: center;  /* Centra horizontalmente */
     align-items: center;      /* Centra verticalmente */
     padding: 10px;
     flex: 0 1 calc(33.333% - 40px);
+    gap: 10px;
     background-color: rgb(47, 37, 36);
-    border-radius: 8px;
     overflow: hidden;
-    transition: transform 0.3s;
-    border-radius: 12px;
-
-    /* Establece una altura fija o mínima para alinear */
-    min-height: 250px;
-
-    flex-wrap: wrap;              /* Por si no entran los 3 en una sola fila */
-    gap: 20px;
+    transition: transform 0.9s ease;
+    border-radius: 12px; 
+    min-height: 250px;  /* Establece una altura fija o mínima para alinear */
+    flex-wrap: wrap;    /* Por si no entran los 3 en una sola fila */
     width: 100%;
+}
+
+.videos {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.video-gallery video:hover {
+    transform: scale(1.05); /* Agranda el video un 5% */
+    z-index: 1; /* Lo eleva si hay otros elementos cercanos */
 }
 
 /* Contenedor El juego */
