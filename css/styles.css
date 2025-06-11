@@ -1,5 +1,7 @@
 @charset "utf-8";
 
+/* F U E N T E S   U T I L I Z A D A S */
+
 /* Definición y ubicación de la fuente Medula One */
 @font-face {
   font-family: 'Medula One';
@@ -19,6 +21,10 @@
     font-style: normal;
     font-display: swap;
 }
+
+/* ---------------------------------------------------------------------------- */
+
+/* H E A D E R   D E   T O D A S   L A S   P Á G I N A S */
 
 /* Estilo de los encabezados principales */
 h1 {
@@ -67,17 +73,19 @@ h1 {
     display: block;
 }
 
-/* Estilo al pasar el mouse */
+/* Estilo al pasar el mouse sobre el navegador*/
 .navegador li a:hover {
     background-color: #444;
     border-radius: 5px; /* Redondea las 4 esquinas con un radio de 5px */
 }
 
-
 /* Estilo aplicado al Logo en el Header */
 .logo-redondeado {
   border-radius: 50%; /* Redondea las 4 esquinas con un radio de 50px */
 }
+
+/* ---------------------------------------------------------------------------- */
+
 
 /* Estilo del body */
 body {
@@ -106,11 +114,7 @@ footer {
     text-align: center; /* Alinear al centro */
 }
 
-.seccion-trailer {
-  text-align: center;
-}
-
-.seccion-intro h2, .seccion-sobre h2, .seccion-personajes h2 {
+.eljuego-container h2 {
     text-align: center;  
 }
 
@@ -180,7 +184,7 @@ footer {
     border-radius: 12px;
 }
 
-.seccion-imagenes h2, .seccion-imagenes h3, .seccion-videos h2, .seccion-videos h3, .seccion-bso h2{
+.seccion-imagenes h2, .seccion-imagenes h3, .seccion-videos h2, .seccion-videos h3 {
   text-align: center;
   color: rgb(255, 216, 144);
 }
